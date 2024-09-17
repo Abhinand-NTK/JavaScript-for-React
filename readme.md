@@ -5,9 +5,9 @@ Objective: Introduce the basics of JavaScript, including variables and data type
 
 1. Introduction (1-2 mins)
 
-        JavaScript is a high-level, interpreted programming language primarily used for creating dynamic and interactive elements on websites. Developed in 1995 by Brendan Eich, JavaScript is a core technology of the World Wide Web, alongside HTML and CSS. It enables developers to add features like interactive forms, animations, and real-time updates to web pages.
+        -JavaScript is a high-level, interpreted programming language primarily used for creating dynamic and interactive elements on websites. Developed in 1995 by Brendan Eich, JavaScript is a core technology of the World Wide Web, alongside HTML and CSS. It enables developers to add features like interactive forms, animations, and real-time updates to web pages.
         
-        JavaScript is a versatile language, supporting both object-oriented and functional programming paradigms. It runs in the browser, making it essential for client-side scripting. Additionally, with the advent of Node.js, JavaScript can also be used for server-side development, expanding its use beyond just web browsers.
+        -JavaScript is a versatile language, supporting both object-oriented and functional programming paradigms. It runs in the browser, making it essential for client-side scripting. Additionally, with the advent of Node.js, JavaScript can also be used for server-side development, expanding its use beyond just web browsers.
             
     - Importance of JavaScript in web development.
         - Interactivity and Dynamic Content: JavaScript allows developers to create interactive elements on web pages, such as forms with validation, animations, and real-time content updates. This enhances user experience by making web pages more engaging and responsive.
