@@ -1,4 +1,4 @@
-**Module - 1**
+****Module - 1****
 
 
 Objective: Introduce the basics of JavaScript, including variables and data types.
@@ -127,7 +127,7 @@ console.log(a); // 1, because `var` is function-scoped
 - Use `const` when you don't want the variable to be reassigned, keeping the code safer and easier to understand.
 
 
-**Module - 2**
+****Module - 2****
 
 ### 1. **Primitive Data Types**
 
