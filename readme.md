@@ -1,4 +1,4 @@
-Module - 1
+**Module - 1**
 
 
 Objective: Introduce the basics of JavaScript, including variables and data types.
@@ -125,3 +125,199 @@ console.log(a); // 1, because `var` is function-scoped
 - Use `var` sparingly, as its function-scoping and hoisting can lead to unexpected behaviors.
 - Prefer `let` for variables that you expect to change, but within controlled, block-level scopes.
 - Use `const` when you don't want the variable to be reassigned, keeping the code safer and easier to understand.
+
+
+**Module - 2**
+
+### 1. **Primitive Data Types**
+
+Primitive data types are the most basic data types in JavaScript. They are immutable (i.e., they can't be changed) and are compared by value.
+
+#### a. **String**
+- A string represents a sequence of characters. It can be created using single quotes (`'`), double quotes (`"`), or backticks (`` ` ``).
+  
+  Example:
+  ```javascript
+  let name = "John";
+  console.log(typeof name); // "string"
+  ```
+
+  **Characteristics**:
+  - Strings are immutable. Once created, the string cannot be altered.
+  - You can use various methods on strings (e.g., `.length`, `.charAt()`, `.substring()`).
+
+#### b. **Number**
+- A `Number` in JavaScript can be an integer or a floating-point number. JavaScript doesn't distinguish between them.
+  
+  Example:
+  ```javascript
+  let age = 25;
+  console.log(typeof age); // "number"
+  ```
+
+  **Characteristics**:
+  - JavaScript follows IEEE 754 standards for representing numbers.
+  - Includes `Infinity`, `-Infinity`, and `NaN` (Not a Number).
+  - Numbers can be manipulated using arithmetic operations like `+`, `-`, `*`, and `/`.
+
+  Example of `NaN`:
+  ```javascript
+  let result = 10 / "apple";
+  console.log(result); // NaN
+  console.log(typeof result); // "number"
+  ```
+
+#### c. **Boolean**
+- A `Boolean` represents logical values: `true` or `false`.
+  
+  Example:
+  ```javascript
+  let isStudent = true;
+  console.log(typeof isStudent); // "boolean"
+  ```
+
+  **Characteristics**:
+  - Commonly used in conditional checks.
+  - Can be the result of comparison operations (`>`, `<`, `===`, etc.).
+
+#### d. **Undefined**
+- A variable that has been declared but has not yet been assigned a value is `undefined`.
+  
+  Example:
+  ```javascript
+  let data;
+  console.log(typeof data); // "undefined"
+  ```
+
+  **Characteristics**:
+  - By default, any declared variable that has not been initialized is `undefined`.
+
+#### e. **Null**
+- `Null` represents an intentional absence of any object value.
+  
+  Example:
+  ```javascript
+  let user = null;
+  console.log(typeof user); // "object"
+  ```
+
+  **Characteristics**:
+  - Though it seems like an object, `null` is a primitive value.
+  - It’s used to explicitly declare that a variable should not hold a value.
+
+#### f. **Symbol**
+- Introduced in ES6, a `Symbol` is a unique and immutable primitive value that can be used as the key of an object property.
+  
+  Example:
+  ```javascript
+  let sym1 = Symbol('unique');
+  let sym2 = Symbol('unique');
+  console.log(sym1 === sym2); // false
+  console.log(typeof sym1); // "symbol"
+  ```
+
+  **Characteristics**:
+  - Every `Symbol` is unique, even if they have the same description.
+
+### 2. **Reference Data Types**
+
+Unlike primitives, reference types are mutable, and they are compared by reference (not by value).
+
+#### a. **Object**
+- An `Object` is a collection of key-value pairs. Each key is a string (or `Symbol`), and the value can be any data type, including other objects.
+
+  Example:
+  ```javascript
+  let person = {
+    name: "John",
+    age: 25
+  };
+  console.log(typeof person); // "object"
+  ```
+
+  **Characteristics**:
+  - Objects can store multiple properties and methods.
+  - Objects are mutable, meaning their properties can be added or changed.
+  - Reference comparison: Two objects are considered equal only if they refer to the same instance in memory.
+
+#### b. **Array**
+- An `Array` is a special type of object used for storing an ordered list of values.
+  
+  Example:
+  ```javascript
+  let colors = ["red", "green", "blue"];
+  console.log(typeof colors); // "object"
+  ```
+
+  **Characteristics**:
+  - Arrays are zero-indexed, meaning the first element is at index 0.
+  - They provide various methods (e.g., `.push()`, `.pop()`, `.map()`).
+  - Arrays can hold any data type, including other arrays (i.e., multidimensional arrays).
+
+### 3. **Checking Data Types with `typeof`**
+
+`typeof` is an operator in JavaScript used to check the data type of a value.
+
+- **Primitive Data Types:**
+  ```javascript
+  console.log(typeof "Hello");    // "string"
+  console.log(typeof 42);         // "number"
+  console.log(typeof true);       // "boolean"
+  console.log(typeof undefined);  // "undefined"
+  console.log(typeof null);       // "object" // Special case, though it's not an object
+  console.log(typeof Symbol());   // "symbol"
+  ```
+
+  **Note on `null`:** `typeof null` returns `"object"` because of a quirk in JavaScript’s early implementation, but it’s a primitive value.
+
+- **Reference Data Types:**
+  ```javascript
+  let obj = { key: "value" };
+  let arr = [1, 2, 3];
+  
+  console.log(typeof obj);  // "object"
+  console.log(typeof arr);  // "object"
+  ```
+
+  **Important Notes**:
+  - `typeof` is not always reliable for determining whether a variable is an array. For arrays, you can use `Array.isArray()` or check the constructor:
+    ```javascript
+    console.log(Array.isArray(arr)); // true
+    console.log(arr instanceof Array); // true
+    ```
+
+### 4. **Deep Dive into the Differences Between Primitives and References**
+
+- **Mutability**:
+  - **Primitives**: Immutable, meaning their values cannot be altered once set.
+    ```javascript
+    let x = 5;
+    x = 6; // Actually creates a new value; x does not change in-place
+    ```
+  - **References**: Mutable, meaning objects and arrays can be altered after their creation.
+    ```javascript
+    let obj = { a: 1 };
+    obj.a = 2; // Mutates the object
+    ```
+
+- **Storage and Comparison**:
+  - **Primitives**: Stored directly by value. Two variables with the same primitive value are considered equal.
+    ```javascript
+    let a = 10;
+    let b = 10;
+    console.log(a === b); // true
+    ```
+  - **References**: Stored by reference. Two variables pointing to the same object/array reference the same memory location.
+    ```javascript
+    let arr1 = [1, 2];
+    let arr2 = arr1;
+    console.log(arr1 === arr2); // true (same reference)
+    ```
+
+- **Copying**:
+  - **Primitives**: A copy of the value is made when assigning to a new variable.
+  - **References**: A copy of the reference (not the object itself) is made when assigning to a new variable. Changing one affects the other.
+
+### Conclusion
+
+Understanding JavaScript's data types is crucial for working effectively with the language. Primitives are simple, immutable values, while reference types (like objects and arrays) are more complex, mutable structures. The `typeof` operator provides a basic tool for inspecting data types, but additional methods like `Array.isArray()` may be necessary for more specific checks.
