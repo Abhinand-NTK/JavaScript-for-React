@@ -88,6 +88,7 @@ Objective: Introduce the basics of JavaScript, including variables and data type
    - You can use online JavaScript editors like [CodePen](https://codepen.io), [JSFiddle](https://jsfiddle.net), or [Repl.it](https://replit.com) to write and run JavaScript code in your browser without needing to set up anything locally.
 
 
+---
 
 ### Variable Naming Rules in JavaScript
 
