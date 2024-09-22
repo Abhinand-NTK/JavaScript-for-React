@@ -3,7 +3,7 @@
 
 Objective: Introduce the basics of JavaScript, including variables and data types.
 
-1. Introduction (1-2 mins)
+### Introduction
 
         - JavaScript is a high-level, interpreted programming language primarily used for creating dynamic and interactive elements on websites. Developed in 1995 by Brendan Eich, JavaScript is a core technology of the World Wide Web, alongside HTML and CSS. It enables developers to add features like interactive forms, animations, and real-time updates to web pages.
         
@@ -16,6 +16,9 @@ Objective: Introduce the basics of JavaScript, including variables and data type
         - Asynchronous Operations: JavaScript supports asynchronous programming through features like Promises and the async/await syntax. This allows for tasks such as data fetching and background processing without blocking the user interface.
         - Server-Side Development: With Node.js, JavaScript extends its capabilities to server-side development, enabling developers to build scalable network applications and APIs using the same language for both client and server.
         - Wide Adoption and Community Support: JavaScript is one of the most widely used programming languages, supported by a vast community of developers. This results in a rich ecosystem of tools, libraries, and resources, facilitating development and problem-solving.
+
+
+---
 
 ### JavaScript Versions
 
