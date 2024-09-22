@@ -309,6 +309,7 @@ console.log(a); // 1, because `var` is function-scoped
 - Prefer `let` for variables that you expect to change, but within controlled, block-level scopes.
 - Use `const` when you don't want the variable to be reassigned, keeping the code safer and easier to understand.
 
+---
 
 ****Module - 2****
 
