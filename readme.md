@@ -188,6 +188,7 @@ Hoisting allows you to use variables and functions before their actual declarati
 
         
 
+---
 
 ### Explanation of `var`, `let`, and `const`
 
@@ -261,6 +262,8 @@ const obj = { key: 'value' };
 obj.key = 'newValue'; // This is allowed since the object itself is not reassigned
 console.log(obj); // { key: 'newValue' }
 ```
+
+---
 
 ### Scope Differences between `var`, `let`, and `const`
 
