@@ -17,6 +17,76 @@ Objective: Introduce the basics of JavaScript, including variables and data type
         - Server-Side Development: With Node.js, JavaScript extends its capabilities to server-side development, enabling developers to build scalable network applications and APIs using the same language for both client and server.
         - Wide Adoption and Community Support: JavaScript is one of the most widely used programming languages, supported by a vast community of developers. This results in a rich ecosystem of tools, libraries, and resources, facilitating development and problem-solving.
 
+### JavaScript Versions
+
+1. **ECMAScript 1 (ES1)**: Released in 1997, it was the first edition of the ECMAScript standard.
+
+2. **ECMAScript 2 (ES2)**: Released in 1998, it included editorial changes but no new features.
+
+3. **ECMAScript 3 (ES3)**: Released in 1999, it introduced many features such as regular expressions, try/catch statements, and better string handling.
+
+4. **ECMAScript 4 (ES4)**: This version was proposed but ultimately abandoned due to its complexity.
+
+5. **ECMAScript 5 (ES5)**: Released in 2009, it added features like `strict mode`, JSON support, and array methods like `forEach`.
+
+6. **ECMAScript 6 (ES6)**: Released in 2015 (also known as ES2015), it introduced major features such as:
+   - Let and const keywords
+   - Arrow functions
+   - Template literals
+   - Classes
+   - Promises
+   - Modules
+
+7. **ECMAScript 2016 (ES7)**: Introduced the `Array.prototype.includes` method and the exponentiation operator (`**`).
+
+8. **ECMAScript 2017 (ES8)**: Added features like async/await and `Object.values`/`Object.entries`.
+
+9. **ECMAScript 2018 (ES9)**: Introduced rest/spread properties for objects and asynchronous iteration.
+
+10. **ECMAScript 2019 (ES10)**: Added features like `Array.prototype.flat` and `Object.fromEntries`.
+
+11. **ECMAScript 2020 (ES11)**: Introduced features like optional chaining and nullish coalescing.
+
+12. **ECMAScript 2021 (ES12)**: Added logical assignment operators and `String.prototype.replaceAll`.
+
+13. **ECMAScript 2022 (ES13)**: Introduced class fields and private methods.
+
+14. **ECMAScript 2023 (ES14)**: Introduced features such as `Array.prototype.findLast`.
+
+### How to Run JavaScript
+
+1. **Web Browsers**:
+   - JavaScript can be run directly in web browsers. Open the browser's developer tools (usually by pressing F12 or right-clicking and selecting "Inspect") and navigate to the "Console" tab to execute JavaScript code.
+
+2. **HTML File**:
+   - You can include JavaScript in an HTML file using the `<script>` tag:
+     ```html
+     <!DOCTYPE html>
+     <html>
+     <head>
+       <title>My JavaScript Example</title>
+     </head>
+     <body>
+       <script>
+         console.log("Hello, World!");
+       </script>
+     </body>
+     </html>
+     ```
+   - Save the file with a `.html` extension and open it in a web browser.
+
+3. **Node.js**:
+   - JavaScript can also be run on the server-side using Node.js. To run JavaScript with Node.js:
+     1. Install Node.js from [nodejs.org](https://nodejs.org).
+     2. Create a `.js` file (e.g., `app.js`) and write your JavaScript code.
+     3. Open your terminal/command prompt and navigate to the file's directory, then run:
+        ```
+        node app.js
+        ```
+
+4. **Online Editors**:
+   - You can use online JavaScript editors like [CodePen](https://codepen.io), [JSFiddle](https://jsfiddle.net), or [Repl.it](https://replit.com) to write and run JavaScript code in your browser without needing to set up anything locally.
+
 
 
 ### Variable Naming Rules in JavaScript
