@@ -17,6 +17,44 @@ Objective: Introduce the basics of JavaScript, including variables and data type
         - Server-Side Development: With Node.js, JavaScript extends its capabilities to server-side development, enabling developers to build scalable network applications and APIs using the same language for both client and server.
         - Wide Adoption and Community Support: JavaScript is one of the most widely used programming languages, supported by a vast community of developers. This results in a rich ecosystem of tools, libraries, and resources, facilitating development and problem-solving.
 
+### Hoisting
+
+Hoisting is a JavaScript mechanism where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means you can use variables and functions before they are declared in the code.
+
+### Key Points about Hoisting:
+
+1. **Variable Hoisting**:
+   - Only the declaration is hoisted, not the initialization.
+   - For example:
+     ```javascript
+     console.log(x); // Output: undefined
+     var x = 5;
+     console.log(x); // Output: 5
+     ```
+   - In this case, `var x;` is hoisted to the top, but `x = 5;` is not.
+
+2. **Function Hoisting**:
+   - Function declarations are fully hoisted, meaning you can call the function before its declaration.
+   - For example:
+     ```javascript
+     greet(); // Output: "Hello!"
+
+     function greet() {
+       console.log("Hello!");
+     }
+     ```
+
+3. **let and const**:
+   - Variables declared with `let` and `const` are also hoisted but are not initialized. Accessing them before the declaration will result in a `ReferenceError`.
+   - For example:
+     ```javascript
+     console.log(y); // ReferenceError: Cannot access 'y' before initialization
+     let y = 10;
+     ```
+
+### Summary
+Hoisting allows you to use variables and functions before their actual declaration in the code, but it's essential to understand how it works to avoid unexpected behaviors.
+
         
 
 
